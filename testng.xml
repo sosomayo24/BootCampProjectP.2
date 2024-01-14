@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+   <listener class-name = "com.tutorialsninja.qa.listeners.MyListeners" />
+</listeners>
+
+  <test name="Test">
+    <classes>
+      <class name="com.automation.bootcamp_part2_FRAMEWORK_DESIGN_Hybrid.LoginTest"/>
+      <class name="com.automation.bootcamp_part2_FRAMEWORK_DESIGN_Hybrid.RegisterTest"/>
+      <class name="com.automation.bootcamp_part2_FRAMEWORK_DESIGN_Hybrid.SearchProductTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

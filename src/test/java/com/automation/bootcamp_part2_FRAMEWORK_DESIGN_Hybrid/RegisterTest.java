@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import com.SpecialClasses.Util;
 
-public class First_Framework_Problem {
+public class RegisterTest {
 
 	
 	public WebDriver driver;
@@ -24,18 +24,6 @@ public class First_Framework_Problem {
 		driver.manage().window().maximize();
 		driver.get("http://tutorialsninja.com/demo");
 		
-	}
-	
-	
-	@Test
-	public void loginTest() {
-		driver.findElement(By.linkText("My Account")).click();
-		driver.findElement(By.linkText("Login")).click();
-		driver.findElement(By.id("input-email")).sendKeys("seleniumpanda@gmail.com");
-		driver.findElement(By.id("input-password")).sendKeys("Selenium@123");
-		driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
-		WebElement logoutLink = driver.findElement(By.linkText("Logout"));
-		Assert.assertTrue(logoutLink.isEnabled());
 	}
 	
 	
@@ -58,15 +46,6 @@ public class First_Framework_Problem {
 		
 	}
 	
-	@Test
-	public void searchProductTest() {
-		driver.findElement(By.name("search")).sendKeys("HP");
-		driver.findElement(By.cssSelector("button.btn.btn-default.btn-lg")).click();
-		driver.findElement(By.linkText("HP LP3065")).click();
-		driver.findElement(By.id("button-cart")).click();
-		driver.findElement(By.xpath("//a[@title = 'Checkout']/span")).click();
-		
-	}
 	
 	@AfterMethod
 	public void tearDown() {
